@@ -2,6 +2,6 @@
 {
     public interface IMessageService
     {
-        Task SendMessageToKafkaAsync(string message);
+        Task SendMessageToKafkaAsync(string content);
     }
 }

@@ -3,6 +3,6 @@
     public class MessageDTO
     {
         public long Id { get; set; }
-        public required string Message { get; set; }
+        public string Content { get; set; } = null!;
     }
 }

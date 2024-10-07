@@ -16,13 +16,13 @@
         #endregion
 
         #region Public methods
-        public async Task SendMessageToKafkaAsync(string message)
+        public async Task SendMessageToKafkaAsync(string content)
         {
             Random random = new();
             MessageContract messageContract = new()
             {
                 Id = random.NextInt64(1, long.MaxValue),
-                Message = message
+                Content = content
             };
 
             _ = await _kafkaProducer.ProduceMessageAsync(messageContract);

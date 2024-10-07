@@ -22,16 +22,16 @@
         #region CRUD Methods
 
         /// <summary> Send Message to Kafka </summary>
-        /// <param name="message"></param>
+        /// <param name="content"></param>
         [HttpPost()]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public async Task<IActionResult> SendMessageAsync([FromBody] string message)
+        public async Task<IActionResult> SendMessageToKafkaAsync([FromBody] string content)
         {
 
-            await _messageService.SendMessageToKafkaAsync(message);
+            await _messageService.SendMessageToKafkaAsync(content);
 
-            return Ok(message);
+            return Ok(content);
         }
 
         #endregion
