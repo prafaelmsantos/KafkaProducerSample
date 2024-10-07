@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducerSample.Core", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducerSample.API", "src\API\KafkaProducerSample.API.csproj", "{3FF6D542-9A3F-43FD-9558-F91D1D04F187}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducerSample.Producer", "src\Infrastructure\KafkaProducerSample.Producer\KafkaProducerSample.Producer.csproj", "{C355B5C3-AF51-443C-8316-18F5A5539FF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducerSample.Persistence", "src\Infrastructure\KafkaProducerSample.Persistence\KafkaProducerSample.Persistence.csproj", "{5A84E764-DD51-4D72-8663-C3F87A54BEA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{3FF6D542-9A3F-43FD-9558-F91D1D04F187}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FF6D542-9A3F-43FD-9558-F91D1D04F187}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FF6D542-9A3F-43FD-9558-F91D1D04F187}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C355B5C3-AF51-443C-8316-18F5A5539FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C355B5C3-AF51-443C-8316-18F5A5539FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C355B5C3-AF51-443C-8316-18F5A5539FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C355B5C3-AF51-443C-8316-18F5A5539FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A84E764-DD51-4D72-8663-C3F87A54BEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A84E764-DD51-4D72-8663-C3F87A54BEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A84E764-DD51-4D72-8663-C3F87A54BEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A84E764-DD51-4D72-8663-C3F87A54BEA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,7 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{96712519-FA7B-44EB-BA99-23AE4C67D64D} = {5DC63395-2289-4EF7-806F-82952ABD8EBE}
 		{3FF6D542-9A3F-43FD-9558-F91D1D04F187} = {DB835FD2-ED85-4716-8A2A-A09071FE6D74}
-		{C355B5C3-AF51-443C-8316-18F5A5539FF7} = {25C222B5-8E76-4984-BF4B-0DD0EE091EAF}
+		{5A84E764-DD51-4D72-8663-C3F87A54BEA7} = {25C222B5-8E76-4984-BF4B-0DD0EE091EAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E2F40C-7E85-471A-A5BA-1B190A9314DB}

@@ -5,7 +5,7 @@
     [ApiController]
     public class MessagesController : ControllerBase
     {
-        #region Properties
+        #region Private vars
         private readonly IMessageService _messageService;
 
         #endregion
@@ -29,7 +29,7 @@
         public async Task<IActionResult> SendMessageAsync([FromBody] string message)
         {
 
-            await _messageService.SendMessageAsync(message);
+            await _messageService.SendMessageToKafkaAsync(message);
 
             return Ok(message);
         }

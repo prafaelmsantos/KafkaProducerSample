@@ -14,7 +14,7 @@
         {
             //Services
             services.AddKafkaServices();
-            services.AddProducerServices();
+            services.AddPersistenceServices();
 
             //Indica que estou a trabalhar com a arquitetura MVC com Views Controllers. Permite chamar o meu controller
             //NewsoftJson para evitar um loop infinito no retorno

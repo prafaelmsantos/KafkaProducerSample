@@ -1,4 +1,4 @@
-﻿namespace KafkaProducerSample.Producer.Services
+﻿namespace KafkaProducerSample.Persistence.Services
 {
     public class MessageService : IMessageService
     {
@@ -7,13 +7,16 @@
         private readonly IKafkaProducer _kafkaProducer;
         #endregion
 
+        #region Constructors
         public MessageService(ILogger<IMessageService> logger, IKafkaProducer kafkaProducer)
         {
             _logger = logger;
             _kafkaProducer = kafkaProducer;
         }
+        #endregion
 
-        public async Task SendMessageAsync(string message)
+        #region Public methods
+        public async Task SendMessageToKafkaAsync(string message)
         {
             Random random = new();
             MessageContract messageContract = new()
@@ -26,5 +29,6 @@
 
             _logger.LogInformation($"Created message with id {messageContract.Id}");
         }
+        #endregion
     }
 }

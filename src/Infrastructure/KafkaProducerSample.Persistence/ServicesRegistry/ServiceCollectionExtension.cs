@@ -1,8 +1,8 @@
-﻿namespace KafkaProducerSample.Producer.ServicesRegistry
+﻿namespace KafkaProducerSample.Persistence.ServicesRegistry
 {
     public static class ServiceCollectionExtension
     {
-        public static IServiceCollection AddProducerServices(this IServiceCollection services)
+        public static IServiceCollection AddPersistenceServices(this IServiceCollection services)
         {
             #region Services
             services.AddScoped<IMessageService, MessageService>();
