@@ -4,5 +4,6 @@
     {
         public static string QueueName { get => "message_sample"; }
         public static string TopicName { get => "message_sample"; }
+        public static int Partitions { get => 1; }
     }
 }
